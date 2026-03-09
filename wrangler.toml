@@ -1,0 +1,17 @@
+name = "cf-ai-das-saptarishi"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# Workers AI binding – provides access to Llama 3.3 and other Cloudflare AI models
+[ai]
+binding = "AI"
+
+# Durable Objects binding – provides per-session state, coordination, and memory
+[[durable_objects.bindings]]
+name = "CHAT_SESSION"
+class_name = "ChatSession"
+
+# Migration to create the ChatSession Durable Object class
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatSession"]
