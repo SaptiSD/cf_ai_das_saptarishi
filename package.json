@@ -1,0 +1,17 @@
+{
+  "name": "cf-ai-das-saptarishi",
+  "version": "1.0.0",
+  "description": "AI-powered chat assistant using Cloudflare Workers AI (Llama 3.3), Durable Objects, and SSE streaming",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241224.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.101.0"
+  }
+}
